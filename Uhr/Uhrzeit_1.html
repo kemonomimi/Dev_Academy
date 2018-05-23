@@ -1,0 +1,53 @@
+<html>
+<head>
+<title> Testpage </title>
+<style>
+    .button{
+        background-color: rgb(2, 68, 35);
+        border: none;
+        color: rgb(255, 39, 1);
+        padding: 15px 25px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+    }
+.button:hover{
+    background-color: rgb(22, 233, 29);
+}
+
+</style>
+
+
+</head>
+<body>
+
+ <img src="Uhr-1.png" alt="Uhrzeit" width="60" height="60">
+ <br/>
+ <p> Wer hat an der Uhr gedreht? Ist es wirklich schon so spät? </p>
+ <br/>
+
+    <button class="button" onclick="startTime()">aktuelle Uhrzeit</button>
+    <script type="text/javascript">
+        function startTime(){
+            var d=new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);    
+        }
+        function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+    </script>
+<br/>
+<br/>
+
+<div id="txt"></div>
+
+</body>
+</html>

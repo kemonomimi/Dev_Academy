@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title> Testpage </title>
+    <style>
+        .button {
+            background-color: rgb(2, 68, 35);
+            border: none;
+            color: rgb(255, 39, 1);
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: rgb(22, 233, 29);
+        }
+
+        .green {
+            color: greenyellow;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .violet {
+            color: blueviolet
+        }
+
+
+        .orange {
+            color: orange;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <center>
+
+        <img src="Uhr-1.png" alt="Uhrzeit" width="60" height="60">
+        <br/>
+        <br/>
+        <p> Wer hat an der Uhr gedreht? Ist es wirklich schon so spät? </p>
+        <br/>
+        <br/>
+        <form action="#">
+            <label>Farbe:
+                <select name="farbe">
+                    <option style="color: greenyellow">Grün</option>
+                    <option style="color: red">Rot</option>
+                    <option style="color: blue">Blau</option>
+                    <option style="color: blueviolet">Lila</option>
+                    <option style="color: orange">Orange</option>
+                </select>
+            </label>
+        </form>
+
+        <br/>
+        <br/>
+
+
+        <button class="button" onclick="clickme()">aktuelle Uhrzeit</button>
+        <script type="text/javascript">
+
+            function clickme() {
+                if (document.getElementById('txt').innerHTML == "") startTime();
+                else {
+                    clearTimeout(t);
+                    leeresFeld();
+                }
+            }
+
+            function startTime() {
+                var d = new Date();
+                var h = d.getHours();
+                var m = d.getMinutes();
+                var s = d.getSeconds();
+                h = checkTime(h);
+                m = checkTime(m);
+                s = checkTime(s);
+                var time = h + ":" + m + ":" + s;
+                document.getElementById('txt').innerHTML =
+                    time;
+                t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                return i;
+            }
+
+            var t;
+
+            function leeresFeld() {
+                var free = "";
+                document.getElementById('txt').innerHTML =
+                    free;
+            }
+
+
+
+        </script>
+        <br/>
+        <br/>
+
+        <div id="txt"></div>
+
+
+    </center>
+</body>
+
+</html>

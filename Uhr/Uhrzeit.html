@@ -1,0 +1,37 @@
+<html>
+<head>
+<title> Testpage </title>
+<style>
+    .button{
+        background-color: #4CAF50;
+        border: none;
+        color: tomato;
+        padding: 15px 25px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+    }
+.button:hover{
+    background-color: springgreen;
+}
+
+</style>
+
+
+</head>
+<body>
+  
+ <p> Wer hat an der Uhr gedreht? Ist es wirklich schon so spät? </p>
+ <br/>
+
+    <button class="button" onclick="myFunction()"; "hideClock()" >aktuelle Uhrzeit</button>
+    <script type="text/javascript">
+        function myFunction(){
+            var d=new Date();
+            document.write(d.toLocaleString());     
+        }
+
+    </script>
+
+</body>
+</html>

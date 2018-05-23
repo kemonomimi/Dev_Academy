@@ -1,0 +1,57 @@
+
+.button {
+    background-color: rgb(2, 68, 35);
+    border: none;
+    color: rgb(255, 39, 1);
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(22, 233, 29);
+}
+
+.green {
+    color: greenyellow;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.violet {
+    color: blueviolet
+}
+
+
+.orange {
+    color: orange;
+}
+
+.black{
+    color: black;
+}
+
+
+.size1{
+font-size: 13px;
+}
+.size2{
+font-size: 15px;
+}
+.size3{
+font-size: 17px;
+}
+.size4{
+font-size: 18px;
+}
+
+
+
+

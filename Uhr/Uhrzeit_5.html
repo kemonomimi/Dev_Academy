@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title> Testpage </title>
+    <link href="C:\Users\Juliana\Desktop\DEV_A\Style.css" rel="stylesheet" type="text/css">
+    <script src="starttime.ts" charset="utf-8" async></script>
+    <meta charset="UTF-8">
+
+
+</head>
+
+<body>
+   
+    <center>
+
+
+        
+
+        <img src="Uhr-1.png" alt="Uhrzeit" width="60" height="60">
+        <br/>
+        <br/>
+        <p> Wer hat an der Uhr gedreht? Ist es wirklich schon so spät? </p>
+        <br/>
+        <br/>
+        <form action="">
+            <label>Farbe:
+                <select id="farbe" onchange="farbeAendern()">
+                    <option style="color: greenyellow" value="Grün">Grün</option>
+                    <option style="color: red" value="Rot">Rot</option>
+                    <option style="color: blue" value="Blau">Blau</option>
+                    <option style="color: blueviolet" value="Lila">Lila</option>
+                    <option style="color: orange" value="Orange">Orange</option>
+                </select>
+            </label>
+            <label>Land:
+                <select id="zeit" onchange="Uhrzeitaendern()">
+                    <option value="deutsch">Deutsch</option>
+                    <option value="gb">GB</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="japan">Japan</option>
+                    <option value="hanoi">Hanoi</option>
+                </select>
+            </label>
+            <label>Land:
+                <select id="groesse" onchange="GroesseAendern()">
+                    <option value="size_1">klein</option>
+                    <option value="size_2">mittel</option>
+                    <option value="size_3">groß</option>
+                    <option value="size_4">sehr groß</option>
+                </select>
+            </label>
+        </form>
+        <div style="visibility: hidden; display: none" id="txt1" ></div></div>
+        <br/>
+        <br/>
+
+        
+
+
+        <button class="button" onclick="clickme()">aktuelle Uhrzeit</button>
+        
+        <br/>
+        <br/>
+
+        <div id="txt"></div>
+
+
+
+    </center>
+
+    
+</body>
+
+</html>

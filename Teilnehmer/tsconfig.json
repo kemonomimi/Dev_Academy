@@ -1,0 +1,28 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"target": "es5",
+		"module": "amd",
+		"declaration": false,
+		"experimentalDecorators": true,
+		"removeComments": true,
+		"strictNullChecks": false,
+		"strict": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noLib": false,
+		"preserveConstEnums": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"diagnostics": true,
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"lib": [ "dom", "es5", "es2015.promise", "es2015.iterable"],
+		"baseUrl": ".",
+		"jsx": "react",
+		"paths": {
+			"src/*": ["./src/*"],
+			"*": ["./src/src-thirdparty/typing/node_modules/@types/*"]
+		},
+		"typeRoots": ["./src/src-thirdparty/typing/node_modules/@types"]
+	}
+}

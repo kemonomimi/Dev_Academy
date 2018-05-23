@@ -1,0 +1,36 @@
+body {
+    text-align: left;
+}
+
+#inhalte{
+    /* margin-left: 14em; */
+    background-color:yellowgreen;
+}
+
+.button {
+    background-color: rgb(2, 68, 35);
+    border: none;
+    color: rgb(255, 39, 1);
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(22, 233, 29);
+}
+
+.button1 {
+    background-color: rgb(2, 68, 35);
+    border: none;
+    color: rgb(255, 39, 1);
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: rgb(22, 233, 29);
+}
